@@ -428,4 +428,7 @@
         <item>920</item>  <!-- sensorLocationY -->
         <item>210</item>  <!-- sensorRadius -->
     </array>
+
+    <!--Useful if you want to improve signal reception -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
 </resources>
