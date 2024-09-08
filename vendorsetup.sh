@@ -4,6 +4,9 @@ echo 'Nuke Source stuffs'
 	rm -rf hardware/qcom-caf/sm8450/display
 	rm -rf hardware/xiaomi
 
+echo 'Cloning Basic Call Recorder Tree'
+	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_bcr -b ursa vendor/bcr
+
 echo 'Cloning Device Common Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_device_xiaomi_sm8450-common -b ursa device/xiaomi/sm8450-common
 
