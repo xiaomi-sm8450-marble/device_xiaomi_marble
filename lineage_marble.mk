@@ -7,7 +7,7 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common EverestOS configuration
+# Inherit from common TenX-OS configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
@@ -29,17 +29,9 @@ BUILD_FINGERPRINT := POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.8.0.UMR
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# EverestOS stuff
-TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_SUPPORTS_BLUR := true
-TARGET_DISABLE_EPPE := true
-TARGET_HAS_UDFPS := false
-WITH_GAPPS := true
-
-# Quick switch (add more than one Launcher in build)
+# TenX-OS stuff
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-
-# EverestOS Maintainer stuff
-EVEREST_MAINTAINER := SharmagRit
-EVEREST_BUILD_TYPE := OFFICIAL
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := false
